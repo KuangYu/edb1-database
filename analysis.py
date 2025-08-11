@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import numpy as np
+from typification import mk_dir
 
 ifile = open('edb1.csv', 'r')
 ifile.readline()
@@ -59,7 +60,7 @@ n_salt = len(salt_list)
 n_thresh_mol = 10
 n_thresh_salt = 20
 
-filter_mol = (n_formula_mol>n_thresh_mol) #* np.array(['Si' not in w for w in mol_list])
+filter_mol = (n_formula_mol>n_thresh_mol) * np.array(['Si' not in w for w in mol_list])
 filter_salt = np.array((n_formula_salt>n_thresh_salt)) * np.array(['Na' not in w for w in salt_list])
 
 mol_list = mol_list[filter_mol]
@@ -94,6 +95,7 @@ salt_list = np.array([
 ])
 n_formula_salt = n_formula_salt[filter_salt]
 
+ofile = open('index_formula.txt', 'w')
 i = 0
 for i_formula in formulas:
     f = formulas[i_formula]
@@ -102,8 +104,9 @@ for i_formula in formulas:
         if comp not in mol_list and comp not in salt_list:
             flag = 1
     if flag == 0:
-        print(i_formula)
+        print(i_formula, file=ofile)
         i += 1
+ofile.close()
 
 # price and availability information
 prices = {}
@@ -121,10 +124,12 @@ for line in ifile:
 ifile.close()
 
 
-print(i)
-print(len(mol_list), len(salt_list))
+# Write the targeted molecules
+ofile = open('mols_target.dat', 'w')
+print('Covered # formula:', i, file=ofile)
+print('Target # mols and # salts:', len(mol_list), len(salt_list), file=ofile)
 
-print('-----------')
+print('-----------', file=ofile)
 for i_mol in range(len(mol_list)):
     if prices[mol_list[i_mol]] > 1000:
         flag = 'YE'
@@ -132,9 +137,9 @@ for i_mol in range(len(mol_list)):
         flag = 'Y'
     else:
         flag = 'N'
-    print(mol_list[i_mol], n_formula_mol[i_mol], flag)
+    print(mol_list[i_mol], n_formula_mol[i_mol], flag, file=ofile)
 
-print('-----------')
+print('-----------', file=ofile)
 for i_salt in range(len(salt_list)):
     if prices[mol_list[i_mol]] > 1000:
         flag = 'YE'
@@ -142,12 +147,16 @@ for i_salt in range(len(salt_list)):
         flag = 'Y'
     else:
         flag = 'N'
-    print(salt_list[i_salt], n_formula_salt[i_salt], flag)
+    print(salt_list[i_salt], n_formula_salt[i_salt], flag, file=ofile)
+
+ofile.close()
 
 # draw structure
 from rdkit import Chem
 from rdkit.Chem import Draw
 
+mk_dir('salts_target')
+mk_dir('mols_target')
 for i_salt in range(len(salt_list)):
     mol = Chem.MolFromSmiles(salt_list[i_salt])
     smiles = salt_list[i_salt]
@@ -157,7 +166,7 @@ for i_salt in range(len(salt_list)):
             flag += 'E'
     else:
         flag = 'N'
-    Draw.MolToFile(mol, 'salts/%d_%d_%s.png'%(i_salt, n_formula_salt[i_salt], flag), size=(300, 300))
+    Draw.MolToFile(mol, 'salts_target/%d_%d_%s.png'%(i_salt, n_formula_salt[i_salt], flag), size=(300, 300))
 
 for i_mol in range(len(mol_list)):
     mol = Chem.MolFromSmiles(mol_list[i_mol])
@@ -168,4 +177,4 @@ for i_mol in range(len(mol_list)):
             flag += 'E'
     else:
         flag = 'N'
-    Draw.MolToFile(mol, 'mols/%d_%d_%s.png'%(i_mol, n_formula_mol[i_mol], flag), size=(300, 300))
+    Draw.MolToFile(mol, 'mols_target/%d_%d_%s.png'%(i_mol, n_formula_mol[i_mol], flag), size=(300, 300))

@@ -1,0 +1,6 @@
+COC(=O)OCF                                         C(-F/SP3,-O/SP2)
+O=C1OCCC1F                                         C(-C/SP2,-C/SP3,-F/SP3)
+O=C1CC(F)CO1                                       C(-C/SP3,-C/SP3,-F/SP3)
+O=C(OCF)OCF                                        C(-F/SP3,-O/SP2)
+CC(OC(F)(F)C(F)C(F)(F)F)C(F)(F)C(F)C(F)(F)F        C(-C/SP3,-C/SP3,-F/SP3)
+C1C(OC(=O)O1)CC(C(F)(F)F)(C(F)(F)F)F               C(-C/SP3,-C/SP3,-C/SP3,-F/SP3)
