@@ -1,0 +1,120 @@
+﻿编号,SMILES字符串,频次,能否买到,试剂公司,售价（2025.7.29）,包装规格,购买周期,分子式,学名
+-----------,,,,,,,,,
+0,CC1COC(=O)O1,5855,能,Aladdin,￥305.90,"100g（99.7%,无水级）",现货,C4H6O3,碳酸丙烯酯(PC)
+1,O=C1OCCO1,2877,能,Aladdin,￥99.90,"100g（99%,电子级）",现货,C3H4O3,碳酸乙烯酯（Ethylene carbonate）
+2,CCOC(=O)OCC,2482,能,Aladdin,￥31.90,100ml（99%）,现货,C5H10O3,碳酸二乙酯（DEC）
+3,CC[N+](CC)(CC)CC.F[P-](F)(F)(F)(F)F,754,能,Aladdin,￥51.90,5g(98%),现货,C8H20F6NP,四乙基六氟磷酸铵（Tetraethylammonium hexafluorophosphate）
+4,[B-](F)(F)(F)F.CC[N+](CC)(CC)CC,733,能,Aladdin,￥35.90,5g(99%),现货,C8H20N.BF4,四乙基四氟硼酸铵（Tetraethylammonium tetrafluoroborate）
+5,COCCOC,719,能,Aladdin,￥39.90,5g(98%),现货,C9H20O5,四乙二醇单甲醚（Tetraethyleneglycol monomethyl ether）
+6,CCOC(=O)OC,673,能,Aladdin,￥64.90,25ml（≥98%),现货,C4H8O3,碳酸甲乙酯（Ethyl methyl carbonate）
+7,COC(=O)OC,581,能,Aladdin,￥219.90,"100ml（99%,电子级）",现货,C3H6O3,碳酸二甲酯（DMC）
+8,O=C1CCCO1,474,能,Sigma-Aldrich,￥248.34,25g（≥99%),Sigma两月[国药(Sinopharm)现货],C4H6O2,γ-丁内酯
+9,CCOC(=O)C,413,能,Aladdin,￥240.90,"100ml（99.8%,电子级）",现货,C4H8O2,乙酸乙酯（Ethylacetate）
+10,O=S1(=O)CCCC1,374,能,Aladdin,￥57.90,5ml（99.5%）,现货,C4H8O2S,环丁砜（Sulfolane）
+11,C1CCOC1,288,能,Aladdin,￥359.90,100ml（99.9%）,现货,C4H8O,四氢呋喃(THF)
+12,CC1CCCO1,270,能,Aladdin,￥39.90,100ml（99%）,现货,C5H10O3,2-甲基四氢呋喃（ 2-Methyltetrahydrofuran）
+13,CC#N,208,能,Aladdin,￥99.90,"2ml（99.8%,电子级）",现货,CH3CN,乙腈(ACN)
+14,COCCOCCOCCOC,191,能,Aladdin,￥49.90,100ml（99%）,现货,C8H18O4,三乙二醇二甲醚(Triethylene glycol dimethyl ether)
+15,CC(=O)OC,168,能,Aladdin,￥209.90,"100ml（99.5%,无水级）",现货,C3H6O2,乙酸甲酯(Methyl acetate)
+16,C1COCO1,153,能,Aladdin,￥295.90,"100ml（99.8%,无水级）",现货,C3H6O2,"1,3-二氧五环(1,3-Dioxlane)"
+17,COCCOCCOCCOCCOC,126,能,Aladdin,￥194.90,5ml（99.5%）,现货,C10H22O5,四乙二醇二甲醚(Tetraethylene glycol dimethyl ether)
+18,N#CCCC#N,119,能,Aladdin,￥29.90,25g（≥99%),现货,C4H4N2,丁二腈（ Succinonitrile）
+19,C1COB(OCCOB2OCCCO2)OC1,115,否,,,,,,
+20,COCOC,108,能,Aladdin,￥128.90,100ml（99%）,现货,C3H8O2,甲醛二甲缩醛（Formaldehyde dimethyl acetal）
+21,ClCCl,104,能,Aladdin,￥199.90,500ml(99.9%),现货,CH2Cl2,二氯甲烷（Dichloromethane）
+22,Cc1ccccc1,83,能,Aladdin,￥285.90,"500g(99.8%, 无水级)",现货,C7H8,甲苯（Toluene）
+23,COCCOCCOC,78,能,Aladdin,￥192.90,"100g（99.5%,无水级）",现货, C6H14O3,二乙二醇二甲醚（ 2-Methoxyethyl ether）
+24,CS(=O)C,73,能,Aladdin,￥59.90,"2ml（99.9%,无水级）",现货,C2H6SO,二甲基亚砜（DMSO）
+25,N#CCCCCC#N,66,能,Aladdin,￥58.90,100ml（99%）,现货,C6H8N2,己二腈（Adiponitrile）
+26,FC(F)C(F)(F)COC(F)(F)C(F)F,66,能,Aladdin,￥185.90,25g（≥99.5%),现货,C5H4F8O,"1,1,2,2-四氟乙基2,2,3,3-四氟丙醚（1,1,2,2-Tetrafluoroethyl 2,2,3,3-Tetrafluoropropyl Ether(HFE-458)）"
+27,FC1COC(=O)O1,65,能,Aladdin,￥46.90,25g（≥98%),现货,C3H3FO3,氟代碳酸乙烯酯（FEC）
+28,COC(=O)OCF,55,否,,,,,,
+29,C1=CC=NC(=C1)C#N,54,能,Aladdin,￥29.90,25g（≥98%),现货, C6H4N2,2-氰基吡啶（2-Pyridinecarbonitrile）
+30,CCOCCOCC,54,能,Aladdin,￥71.90,5ml（99.5%）,现货,C6H14O2,二乙基溶纤剂（Ethylene glycol diethyl ether）
+31,[B-](F)(F)(F)F.CC[N+](C)(CC)CC,49,能,Aladdin,￥40.90,5g(98%),现货, C7H18BF4N,三乙基甲基铵四氟硼酸盐（ Triethylmethylammonium Tetrafluoroborate）
+32,[O-]S(=O)(=O)C(F)(F)F.CCCC[N+](CCCC)(CCCC)CCCC,43,能,Aladdin,￥94.90,5g(98%),现货,C17H36F3NO3S,四丁基三氟甲磺酸铵（Tetrabutylammonium Trifluoromethanesulfonate）
+33,CCCC#N,40,能,Sigma-Aldrich,￥510.75,100ml（99%）,现货,CH3CH2CH2CN,丁腈（Butyronitrile）
+34,COCCOCC(F)(F)F,40,能,Macklin,￥241.00,100mg(95%),现货,C5H9F3O2,"1,1,1-三氟-2-(2-甲氧基乙氧基)乙烷（1,1,1-Trifluoro-2-(2-methoxyethoxy)ethane）"
+35,CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O,39,能,Aladdin,￥102.90,5g(99%),现货, C16H36ClNO4,过氯酸四丁基铵（Tetrabutylammonium perchlorate）
+36,CCS(C)(=O)=O,33,能,Aladdin,￥264.90,5g(98%),现货,C3H8O2S,乙基甲基砜（Ethyl Methyl Sulfone）
+37,[B-](C1=CC=CC=C1)(C2=CC=CC=C2)(C3=CC=CC=C3)C4=CC=CC=C4.CCCC[N+](CCCC)(CCCC)CCCC,33,能,Aladdin,￥511.90,1g(99%),现货,C40H56BN,四正丁基四苯基硼酸铵（Tetrabutylammonium tetraphenylborate）
+38,N#CCCCC#N,31,能,Sigma-Aldrich,￥878.41,25ml（99%),三月周期,NC(CH2)3CN,戊二腈
+39,CCS(=O)(=O)CC1CCCCC1,31,否,,,,,,
+40,C[Si](C)(C)O[Si](C)(CCC1COC(=O)O1)O[Si](C)(C)C,30,否,,,,,,
+41,COC(C(C(C(F)(F)F)(F)F)(F)F)(F)F,29,能,Aladdin,￥120.90,25g(98%),现货,C5H3F9O,甲基九氟丁醚（Methyl Nonafluorobutyl Ether）
+42,CC1CCS(=O)(=O)C1,28,能,Aladdin,￥196.90,5g(98%),现货,C5H10O2S,3-甲基环丁砜（3-Methylsulfolane）
+43,C[Si](C)(C)OCCC#N,25,否,,,,,,
+44,CCN1C=C[N+](=C1)C.O=C1O[B-](F)(F)OC1=O,24,,,,,,,
+45,CC[N+](CC)(CC)CC.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2,24,,,,,,,
+46,CCN1C=C[N+](=C1)C.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2,24,否,,,,,,
+47,CC[N+](CC)(CC)CC.O=C1O[B-](F)(F)OC1=O,24,否,,,,,,
+48,C1(C(OC(=O)O1)F)F,23,能,Macklin,"￥1,170.00",10g(98%),8-10天,C3H2F2O3,"4,5-二氟-1,3-二氧杂环戊烷-2-酮（4,5-Difluoro-1,3-dioxolan-2-one）"
+49,CCCOC(=O)OC,21,能,Aladdin,￥499.90,5g(97%),现货,C5H10O3,碳酸甲丙酯（Methyl propyl carbonate）
+50,N#CCCOB(OCCC#N)OCCC#N,20,能,Aladdin,￥279.90,1g(98%),现货,C9H12BN3O3,三(2-氰乙基)硼酸酯（Tris(2-cyanoethyl) Borate）
+51,FC(F)(F)COCCOCC(F)(F)F,20,能,Confluore,￥600.00,250mg（98%）,定制, C6H8F6O2,"1,2-双(2,2,2-三氟乙氧基)乙烷（1,2-Bis(2,2,2-trifluoroethoxy)ethane）"
+52,O=C1OCCC1F,20,否,,,,,,
+53,COCCOCC(F)(F)C(F)F,20,能,长沙秉航新材料有限公司,"￥1,100.00",5g ,定制, C6H10F4O2 ,"1,1,2,2-四氟-3-(2甲氧基乙氧基)丙烷（1,1,2,2-Tetrafluoro-3-(2-methoxyethoxy)propane）"
+54,[B-](F)(F)(F)F.CCN1C=C[N+](=C1)C,20,能,Aladdin,￥35.90,5g（98%）,现货,C6H11BF4N2,1-乙基-3-甲基咪唑四氟硼酸盐 (EMIMBF₄)
+55,FC(F)(F)C(F)(F)COC(F)(F)C(F)(F)F,20,否,,,,,,
+56,C[Si](C)(C)O[Si](C)(C)CCC1COC(=O)O1,20,否,,,,,,
+57,COC(=O)OCCF,19,否,,,,,,
+58,CCCCOCCOCCCC,19,否,,,,,,
+59,CCCCCCC1COC(=O)O1,18,否,,,,,,
+60,CCCCCCCCC1COC(=O)O1,18,否,,,,,,
+61,CCCCCCCCCC1COC(=O)O1,18,否,,,,,,
+62,CCCCCCCCCCC1COC(=O)O1,18,否,,,,,,
+63,C[N+](C)(C)C.C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F,17,能,Aladdin,￥249.90,250mg（97%）,现货,C6H12F6N2O4S2,四甲基铵双（三氟甲磺酰基）亚胺（Tetramethylammonium bis(trifluoromethanesulfonyl)imide）
+64,CCOCC,16,否,,,,,,
+65,CC[N+](CC)(CC)CC.C(F)(F)(F)S(=O)(=O)[O-],16,能,Aladdin,￥79.90,5g(99%),现货, C9H20F3NO3S,三氟甲基磺酸四乙铵（Tetraethylammonium Trifluoromethanesulfonate）
+66,O=C(OCF)OCF,15,否,,,,,,
+67,COB(OC)OC,15,能,Aladdin,￥79.90,10ml(99.9%),现货,C3H9BO3,硼酸三甲酯（Trimethyl borate）
+68,FC(F)C(F)(F)COCCOCC(F)(F)C(F)F,15,否,,,,,,
+69,CCOCCOC,15,否,,,,,,
+70,O=C1CC(F)CO1,15,否,,,,,,
+71,CCCC[N+]1(CCCC1)C.C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F,15,能,Aladdin,￥99.90,5g(99%),现货, C11H20F6N2O4S2,1-正丁基-1-甲基吡咯烷二(三氟甲基磺酰)酰亚胺（1-Butyl-1-methylpyrrolidinium Bis(trifluoromethanesulfonyl)imide）
+72,CN(C)S(=O)(=O)C,15,能,Aladdin,￥399.90,5g(98%),现货,C3H9NO2S,"N，N-二甲基甲磺酰胺（N,N-Dimethylmethanesulfonamide）"
+73,CC(OC(F)(F)C(F)C(F)(F)F)C(F)(F)C(F)C(F)(F)F,15,否,,,,,,
+74,C1C(OC(=O)O1)CC(C(F)(F)F)(C(F)(F)F)F,15,否,,,,,,
+75,CS(N)(=O)=O,15,能,Aladdin,￥31.90,5g(98%),现货,CH5NO2S,甲基磺酰胺（Methanesulfonamide）
+76,CC[N+](CC)(CC)CC.[O-]Cl(=O)(=O)=O,14,能,Aladdin,￥89.90,5g(98%),现货,C8H20ClNO4,高氯酸四乙基铵（Tetraethylammonium Perchlorate）
+77,C(F)(Cl)(Cl)Cl,14,能,Aladdin,￥23.90,25g（99.8%),现货,,三氯一氟甲烷
+78,CCOC(=O)OC(C)F,14,否,,,,,,
+79,CCOC(=O)OCCF,14,能,长沙秉航新材料有限公司,"￥4,800.00",10g,定制,,
+80,CC1CCC(O1)C,12,能,Aladdin,￥514.90,5ml（98%）,现货,C6H12O,"2,5-二甲基四氢呋喃(含稳定剂BHT)（2,5-Dimethyltetrahydrofuran (stabilized with BHT)）"
+81,CC[N+](CC)(CC)CC.C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F,12,能,Macklin,￥325.00,1g(98%),现货,C10H20F6N2O4S2,四乙铵双((三氟甲基)磺酰基)酰胺
+82,CC(OC(=O)OCC(F)(F)F)F,11,否,,,,,,
+83,COC=O,11,能,Aladdin,￥419.90,"100ml（99%,无水级）",现货,C2H4O2,甲酸甲酯（Methyl formate）
+-----------,,,,,,,,,
+0,[Li+].F[P-](F)(F)(F)(F)F,2637,能,Aladdin,￥909.90,"5g(99.99%, 电子级)",现货,LiPF6,六氟磷酸锂（Lithium Hexafluorophosphate）
+1,[Li+].[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2,1846,能,Aladdin,￥109.90,25g（≥99%),现货,LiB(C2O4)2,双乙二酸硼酸锂（LiBOB）
+2,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F,991,能,Aladdin,￥216.90,5g(99.9%),现货,C2F6LiNO4S2,双三氟甲烷磺酰亚胺锂（LiTFSI）
+3,[Li+].F[As-](F)(F)(F)(F)F,793,能,Aladdin,"￥1,499.90",5g(99.9%),3-7周, LiAsF6,六氟砷酸锂（Lithium hexafluoroarsenate(V)）
+4,[Li+].[B-](F)(F)(F)F,570,能,Aladdin,￥175.90,5g(99.9%),现货,LiBF4,四氟硼酸锂（Lithium Tetrafluoroborate）
+5,[Li+].[O-]Cl(=O)(=O)=O,437,能,Aladdin,￥291.90,"25g(99.9%, 无水级)",现货,LiClO4,高氯酸锂(Lithium perchlorate)
+6,[Li+].C(F)(F)(F)S(=O)(=O)[O-],208,能,Aladdin,￥133.90,25g（≥99.5%),现货,LiCF3SO3,三氟甲磺酸锂(Lithium trifluoromethanesulfonate)
+7,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F,152,能,Sigma-Aldrich,"￥1,014.66","5g(99.9%, 电池级)",现货,F2LiNO4S2,双(氟磺酰)亚胺锂
+8,[Li+].FC(F)(F)C1=NC2=C([N-]1)C=C(C#N)C(=C2)C#N,95,,,,,,,
+9,[Li+].C1=CC=C2C(=C1)O[P-]34(O2)(OC5=CC=CC=C5O3)OC6=CC=CC=C6O4,69,,,,,,,
+10,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F,65,能,Aladdin,￥197.90,25g（≥99%),现货, LiBF2(C2O4),二氟草酸硼酸锂（LIODFB）
+11,[Li+].C(C(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(C(F)(F)F)(F)F)(F)(F)F,52,能,Aladdin,￥308.90,250mg（98%）,现货,C4F10LiNO4S2,双(五氟乙基磺酰基)亚氨基锂（LiBETI）
+12,[Li+].c1ccc2O[B-]3(Oc2c1)Oc1ccccc1O3,52,能,湖南增达生物科技有限公司（定制）,,,定制,,
+13,[Li+].FC(F)(F)S(=O)(=O)[C-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F,39,能,富士和光纯药(定制),"￥3,425.00",1g,定制,,
+14,[Li+].[B-]12(OC3=CC4=CC=CC=C4C=C3O1)OC5=CC6=CC=CC=C6C=C5O2,34,否,,,,,,
+15,[Li+].[B-](C(C(F)(F)F)(F)F)(F)(F)F,20,否,,,,,,
+16,[O-]Cl(=O)(=O)=O.[Na+],19,能,Aladdin,￥218.90,25g(99.99%),现货,NaClO4,高氯酸钠（）
+17,[Li+].F[P-](F)(F)(F)(F)F.COCCOCCOC.COCCOCCOC,18,,,,,,,
+18,[Li+].C(#N)C1=C(N=C([N-]1)C(F)(F)F)C#N,15,能,Aladdin,￥299.90,1g(97%),现货, C6F3LiN4,"2-(三氟甲基)-1H-咪唑-4,5-二甲腈锂盐"
+19,[Li+].O=S(=O)([O-])C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,15,能,Aladdin,￥199.90,25g(95%),现货,C4F9LiO3S,九氟-1-丁烷磺酸锂
+20,N#Cc1n[n-]nc1C#N.[Li+],15,,,,,,,
+21,[Li+].F[P-](F)(F)(F)(F)F.CN(C)CCN(C)CCN(C)C,15,,,,,,,
+22,[Li+].C(#N)[S-],15,能,Apollo,"￥2,090.00",29g,定制,CLiNS,lithium thiocyanate
+23,[Li+].O=C1O[B-]2(OC(=O)c3ccccc3O2)Oc2ccccc12,14,,,,,,,
+24,[Li+].c1ccc2c(c1)O[B-]1(Oc3ccccc23)Oc2ccccc2c2ccccc2O1,13,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+注：红色标红为从pubchem中搜索SMILES找不到的化合物，售价数据来源于阿拉丁试剂官网 https://www.aladdin-e.com/zh_cn/  以及Sigma-Aldrich官网 https://www.sigmaaldrich.cn/CN/zh/life-science/sigma-aldrich（2025.8.7）,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

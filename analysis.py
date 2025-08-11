@@ -77,22 +77,23 @@ salt_list = np.array([
 '[Li+].[O-]Cl(=O)(=O)=O',
 '[Li+].C(F)(F)(F)S(=O)(=O)[O-]',
 '[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F',
-'[Li+].FC(F)(F)C1=NC2=C([N-]1)C=C(C#N)C(=C2)C#N',
+# '[Li+].FC(F)(F)C1=NC2=C([N-]1)C=C(C#N)C(=C2)C#N',
 # '[Li+].C1=CC=C2C(=C1)O[P-]34(O2)(OC5=CC=CC=C5O3)OC6=CC=CC=C6O4',
 '[Li+].[B-]1(OC(=O)C(=O)O1)(F)F',
 '[Li+].C(C(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(C(F)(F)F)(F)F)(F)(F)F',
 # '[Li+].c1ccc2O[B-]3(Oc2c1)Oc1ccccc1O3',
 '[B-](F)(F)(F)F.CC[N+](C)(CC)CC',
 '[O-]S(=O)(=O)C(F)(F)F.CCCC[N+](CCCC)(CCCC)CCCC',
-# 'CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O',
+ 'CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O',
 # '[Li+].FC(F)(F)S(=O)(=O)[C-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F',
 # '[Li+].[B-]12(OC3=CC4=CC=CC=C4C=C3O1)OC5=CC6=CC=CC=C6C=C5O2',
 # '[B-](C1=CC=CC=C1)(C2=CC=CC=C2)(C3=CC=CC=C3)C4=CC=CC=C4.CCCC[N+](CCCC)(CCCC)CCCC',
-'CCN1C=C[N+](=C1)C.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2',
-'CCN1C=C[N+](=C1)C.O=C1O[B-](F)(F)OC1=O',
-'CC[N+](CC)(CC)CC.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2',
-'CC[N+](CC)(CC)CC.O=C1O[B-](F)(F)OC1=O',
+# 'CCN1C=C[N+](=C1)C.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2',
+# 'CCN1C=C[N+](=C1)C.O=C1O[B-](F)(F)OC1=O',
+# 'CC[N+](CC)(CC)CC.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2',
+# 'CC[N+](CC)(CC)CC.O=C1O[B-](F)(F)OC1=O',
 ])
+
 n_formula_salt = n_formula_salt[filter_salt]
 
 ofile = open('index_formula.txt', 'w')
@@ -141,9 +142,9 @@ for i_mol in range(len(mol_list)):
 
 print('-----------', file=ofile)
 for i_salt in range(len(salt_list)):
-    if prices[mol_list[i_mol]] > 1000:
+    if prices[salt_list[i_salt]] > 1000:
         flag = 'YE'
-    elif prices[mol_list[i_mol]] > 0:
+    elif prices[salt_list[i_salt]] > 0:
         flag = 'Y'
     else:
         flag = 'N'

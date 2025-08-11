@@ -1,5 +1,5 @@
-Covered # formula: 8752
-Target # mols and # salts: 66 19
+Covered # formula: 8600
+Target # mols and # salts: 66 15
 -----------
 CC1COC(=O)O1 5855 Y
 O=C1OCCO1 2877 Y
@@ -71,19 +71,15 @@ COC=O 11 Y
 [Li+].F[P-](F)(F)(F)(F)F 2637 Y
 [Li+].[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2 1846 Y
 [Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F 991 Y
-[Li+].F[As-](F)(F)(F)(F)F 793 Y
+[Li+].F[As-](F)(F)(F)(F)F 793 YE
 CC[N+](CC)(CC)CC.F[P-](F)(F)(F)(F)F 754 Y
 [B-](F)(F)(F)F.CC[N+](CC)(CC)CC 733 Y
 [Li+].[B-](F)(F)(F)F 570 Y
 [Li+].[O-]Cl(=O)(=O)=O 437 Y
 [Li+].C(F)(F)(F)S(=O)(=O)[O-] 208 Y
-[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F 152 Y
-[Li+].FC(F)(F)C1=NC2=C([N-]1)C=C(C#N)C(=C2)C#N 95 Y
-[Li+].[B-]1(OC(=O)C(=O)O1)(F)F 69 Y
-[Li+].C(C(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(C(F)(F)F)(F)F)(F)(F)F 65 Y
-[B-](F)(F)(F)F.CC[N+](C)(CC)CC 52 Y
+[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F 152 YE
+[Li+].[B-]1(OC(=O)C(=O)O1)(F)F 95 Y
+[Li+].C(C(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(C(F)(F)F)(F)F)(F)(F)F 69 Y
+[B-](F)(F)(F)F.CC[N+](C)(CC)CC 65 Y
 [O-]S(=O)(=O)C(F)(F)F.CCCC[N+](CCCC)(CCCC)CCCC 52 Y
-CCN1C=C[N+](=C1)C.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2 49 Y
-CCN1C=C[N+](=C1)C.O=C1O[B-](F)(F)OC1=O 43 Y
-CC[N+](CC)(CC)CC.[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2 39 Y
-CC[N+](CC)(CC)CC.O=C1O[B-](F)(F)OC1=O 39 Y
+CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O 52 Y
