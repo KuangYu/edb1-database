@@ -8,6 +8,7 @@ import rdkit.Chem.rdchem
 import rdkit.Chem.rdmolfiles
 from rdkit.Chem.rdchem import BondType,HybridizationType
 from typification import *
+import xml.etree.ElementTree as ET
 
 def read_ligpargen_lib(path):
     lib_xml_naive = {}
@@ -37,11 +38,14 @@ if __name__ == '__main__':
     lib_xml_naive, lib_pdb_naive = read_ligpargen_lib('ligpargen_files')
 
     # template 
-    smiles = sys.argv[1]#'CC1COC(=O)O1'
-    mol_template = Chem.MolFromSmiles(smiles)
+    smiles = 'CC1COC(=O)O1'
+    # mol_template = Chem.MolFromSmiles(smiles)
     mol1_template, atoms, atypes = typify_mol(smiles, depth=1, withH=True)
+
     # structure from pdb
-    mol = Chem.MolFromPDBFile(lib_pdb_naive[smiles])
-    if not sanity_check(mol_template, mol, range(mol_template.GetNumAtoms()), range(mol.GetNumAtoms())):
+    mol1 = Chem.MolFromPDBFile(lib_pdb_naive[smiles], removeHs=False)
+    if not sanity_check(mol1_template, mol1, range(mol1_template.GetNumAtoms()), range(mol1.GetNumAtoms())):
         print('ERROR: connectivity mismatch')
 
+    # sanity check passed for heavy atoms
+    xmltree = ET.parse(lib_xml_naive[smiles])
