@@ -1,0 +1,56 @@
+REMARK LIGPARGEN GENERATED PDB FILE
+ATOM      1  C00 UNK     1       1.000   1.000   0.000
+ATOM      2  C01 UNK     1      -0.528   1.000   0.000
+ATOM      3  O02 UNK     1      -1.053   1.000   1.342
+ATOM      4  C03 UNK     1      -0.802  -0.205   2.069
+ATOM      5  F04 UNK     1      -1.107  -1.253   1.273
+ATOM      6  F05 UNK     1       0.523  -0.247   2.329
+ATOM      7  C06 UNK     1      -1.583  -0.243   3.359
+ATOM      8  F07 UNK     1      -2.924  -0.265   3.086
+ATOM      9  C08 UNK     1      -1.168  -1.457   4.146
+ATOM     10  F09 UNK     1      -0.443  -2.358   3.445
+ATOM     11  F0A UNK     1      -0.407  -1.083   5.210
+ATOM     12  F0B UNK     1      -2.234  -2.112   4.652
+ATOM     13  C0C UNK     1      -1.092   2.212  -0.778
+ATOM     14  F0D UNK     1      -0.525   2.244  -2.011
+ATOM     15  F0E UNK     1      -2.419   1.986  -0.977
+ATOM     16  C0F UNK     1      -0.927   3.540  -0.070
+ATOM     17  F0G UNK     1       0.382   3.756   0.259
+ATOM     18  C0H UNK     1      -1.437   4.672  -0.937
+ATOM     19  F0I UNK     1      -2.153   4.284  -2.007
+ATOM     20  F0J UNK     1      -2.240   5.487  -0.198
+ATOM     21  F0K UNK     1      -0.421   5.447  -1.390
+ATOM     22  H0M UNK     1       1.382  -0.002   0.215
+ATOM     23  H0N UNK     1       1.396   1.665   0.776
+ATOM     24  H0O UNK     1       1.408   1.295  -0.971
+ATOM     25  H0P UNK     1      -0.884   0.100  -0.524
+ATOM     26  H0Q UNK     1      -1.395   0.668   3.938
+ATOM     27  H0R UNK     1      -1.492   3.530   0.862
+TER 
+CONECT    1    2 
+CONECT    2    3 
+CONECT    3    4 
+CONECT    4    5 
+CONECT    4    6 
+CONECT    4    7 
+CONECT    7    8 
+CONECT    7    9 
+CONECT    9   10 
+CONECT    9   11 
+CONECT    9   12 
+CONECT    2   13 
+CONECT   13   14 
+CONECT   13   15 
+CONECT   13   16 
+CONECT   16   17 
+CONECT   16   18 
+CONECT   18   19 
+CONECT   18   20 
+CONECT   18   21 
+CONECT    1   22 
+CONECT    1   23 
+CONECT    1   24 
+CONECT    2   25 
+CONECT    7   26 
+CONECT   16   27 
+END

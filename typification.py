@@ -71,13 +71,22 @@ def typify_atom(atom, atypes, depth=0, excl=None):
 
 
 
-def typify_mol(smiles, depth=1):
+def typify_mol(smiles, depth=1, withH=False):
     mol = Chem.MolFromSmiles(smiles)
     atom_types = []
     atypes = np.array([a.GetSymbol() for a in mol.GetAtoms()])
     for a in mol.GetAtoms():
         atom_types.append(typify_atom(a, atypes, depth=depth))
-    return list(mol.GetAtoms()), np.array(atom_types)
+    if withH:
+        mol1 = Chem.AddHs(mol)
+        atoms = list(mol1.GetAtoms())
+        # loop over H
+        for ia in range(mol.GetNumAtoms(), mol1.GetNumAtoms()):
+            a = atoms[ia]
+            ihost = a.GetNeighbors()[0].GetIdx()
+            atom_types.append('H-'+atom_types[ihost])
+        return mol1, list(mol1.GetAtoms()), np.array(atom_types)
+    return mol, list(mol.GetAtoms()), np.array(atom_types)
 
 
 if __name__ == '__main__':
@@ -106,7 +115,7 @@ if __name__ == '__main__':
     ifile.close()
     # build the full molecule library
     for smiles in lib_mols:
-        atoms, atypes = typify_mol(smiles, depth=depth)
+        _, atoms, atypes = typify_mol(smiles, depth=depth)
         for atype in atypes:
             if atype not in lib_atomtypes:
                 lib_atomtypes.append(atype)
@@ -124,7 +133,7 @@ if __name__ == '__main__':
     atypes_covered = []
     mols_selected = []
     for smiles in list_salt_smiles:
-        atoms, atypes = typify_mol(smiles, depth=depth)
+        _, atoms, atypes = typify_mol(smiles, depth=depth)
         for atype in atypes:
             if atype not in atypes_covered:
                 atypes_covered.append(atype)
@@ -134,7 +143,7 @@ if __name__ == '__main__':
     for smiles in list_mol_smiles:
         if lib_mols[smiles]['availability'] == 'N':
             continue
-        atoms, atypes = typify_mol(smiles, depth=depth)
+        _, atoms, atypes = typify_mol(smiles, depth=depth)
         flag = 0
         for atype in atypes:
             if atype not in atypes_covered:
@@ -165,7 +174,7 @@ if __name__ == '__main__':
     mk_dir('mols_not_covered')
     i = 0
     for smiles in list_mol_smiles:
-        atoms, atypes = typify_mol(smiles, depth=depth)
+        _, atoms, atypes = typify_mol(smiles, depth=depth)
         flag = 0
         atypes_not_covered = []
         for atype in atypes:
