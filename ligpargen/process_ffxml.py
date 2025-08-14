@@ -89,6 +89,7 @@ class ForceField:
                 idx = int(re.sub('opls_', '', name)) - 800
                 self.lib_atypes[idx] = {
                     'idx': idx,
+                    'idx_use': idx,
                     'toplabel': toplabel,
                     'element': element,
                     'name': name,
@@ -251,12 +252,16 @@ def read_atypes_defs(ifn):
             # deal with heavy atoms
             words = line.split()
             idx = int(words[0])
+            idx_use = int(words[2])
             toplabel = words[1]
-            element = toplabel[0]
+            element = re.search('^[A-Za-z]+', toplabel).group()
             name = 'opls_' + '%d'%(idx+800)
             aclass = element + '%d'%(idx+800)
+            # idx is a unique index for each toplabel
+            # idx_use is the index after manual adjustment
             lib_atypes[idx] = {
                     'idx': idx,
+                    'idx_use': idx,
                     'toplabel': toplabel,
                     'element': element,
                     'name': name,
@@ -264,12 +269,14 @@ def read_atypes_defs(ifn):
                     }
             # deal with Hs
             idx = idx + 100
+            idx_use = idx_use + 100
             toplabel = 'H-' + toplabel
             element = 'H'
             name = 'opls_' + '%d'%(idx+800)
             aclass = element + '%d'%(idx+800)
             lib_atypes[idx] = {
                     'idx': idx,
+                    'idx_use': idx_use,
                     'toplabel': toplabel,
                     'element': element,
                     'name': name,
@@ -287,11 +294,12 @@ if __name__ == '__main__':
     path = 'ligpargen_files'
     lib_xml_naive, lib_pdb_naive = read_ligpargen_lib('ligpargen_files')
     # Create an empty FF
-    forcefield = ForceField(lib_atypes='../atomtypes.dat')
+    forcefield = ForceField(lib_atypes='../atomtypes1.dat')
     map_toplabel2atypes = {}
     for idx in forcefield.lib_atypes:
         label = forcefield.lib_atypes[idx]['toplabel']
-        map_toplabel2atypes[label] = forcefield.lib_atypes[idx]
+        idx_use = forcefield.lib_atypes[idx]['idx_use']
+        map_toplabel2atypes[label] = forcefield.lib_atypes[idx_use]
 
     # template 
     list_smiles = ['CC1COC(=O)O1', 'O=C1OCCO1', 'CCOC(=O)OCC']

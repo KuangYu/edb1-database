@@ -122,7 +122,7 @@ if __name__ == '__main__':
     # print out all atomtypes
     ofile = open('atomtypes.dat', 'w')
     for itype in range(len(lib_atomtypes)):
-        print(itype, lib_atomtypes[itype], file=ofile)
+        print(itype, lib_atomtypes[itype], itype, file=ofile)
     ofile.close()
 
     print(len(lib_atomtypes))
@@ -187,3 +187,8 @@ if __name__ == '__main__':
             Draw.MolToFile(rdkit.Chem.MolFromSmiles(smiles), 'mols_not_covered/%d_%d.png'%(i, lib_mols[smiles]['freq']), size=((300, 300)))
             i += 1
     ofile.close()
+
+#     for itype in range(len(lib_atomtypes)):
+#         if lib_atomtypes[itype] not in atypes_covered:
+#             print(itype,  lib_atomtypes[itype])
+

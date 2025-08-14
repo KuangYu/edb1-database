@@ -34,22 +34,22 @@
 33 C(-C/SP3,-C/SP3,-F/SP3,-F/SP3) 33
 34 C(-C/SP3,-F/SP3,-F/SP3,-O/SP3) 34
 35 C(-C/SP3,-F/SP3,-O/SP2) 35
-36 C(-F/SP3,-O/SP2) 36
+36 C(-F/SP3,-O/SP2) 2 # manual adjust
 37 C(@C/SP2,@N/SP2) 37
 38 N(@C/SP2,@C/SP2) 38
 39 C(-C/SP,@C/SP2,@N/SP2) 39
 40 C(#N/SP,-C/SP2) 40
 41 C(-C/SP3,-F/SP3,-F/SP3,-F/SP3) 41
 42 C(-C/SP3,-C/SP3,-C/SP3) 42
-43 C(-Si/SP3) 43
-44 Si(-C/SP3,-C/SP3,-C/SP3,-O/SP3) 44
-45 O(-Si/SP3,-Si/SP3) 45
-46 Si(-C/SP3,-C/SP3,-O/SP3,-O/SP3) 46
-47 C(-C/SP3,-Si/SP3) 47
-48 O(-C/SP3,-Si/SP3) 48
-49 C(-C/SP2,-C/SP3,-F/SP3) 49
+43 C(-Si/SP3) 0 # manual adjust
+44 Si(-C/SP3,-C/SP3,-C/SP3,-O/SP3) 44 # from ligpargen, no opt
+45 O(-Si/SP3,-Si/SP3) 7 # manual adjust
+46 Si(-C/SP3,-C/SP3,-O/SP3,-O/SP3) 46 # from ligpargen, no opt
+47 C(-C/SP3,-Si/SP3) 12 # manual adjust
+48 O(-C/SP3,-Si/SP3) 7 # manual adjust
+49 C(-C/SP2,-C/SP3,-F/SP3) 42 # manual adjust
 50 C(-C/SP3,-F/SP3) 50
-51 C(-C/SP3,-C/SP3,-F/SP3) 51
+51 C(-C/SP3,-C/SP3,-F/SP3) 42 # manual adjust
 52 C(-N/SP3) 52
 53 N(-C/SP3,-C/SP3,-S/SP3) 53
 54 S(-C/SP3,-N/SP3,=O/SP2,=O/SP2) 54
@@ -58,7 +58,7 @@
 57 C(-F/SP3,-F/SP3,-F/SP3,-S/SP3) 57
 58 N(-S/SP3,-S/SP3) 58
 59 N(-S/SP3) 59
-60 C(-C/SP3,-C/SP3,-C/SP3,-F/SP3) 60
+60 C(-C/SP3,-C/SP3,-C/SP3,-F/SP3) 33 # manual adjust
 61 C(-Cl/SP3,-Cl/SP3,-Cl/SP3,-F/SP3) 61
 62 C(-O/SP2,=O/SP2) 62
 63 Li 63

@@ -60,7 +60,7 @@ n_salt = len(salt_list)
 n_thresh_mol = 10
 n_thresh_salt = 20
 
-filter_mol = (n_formula_mol>n_thresh_mol) * np.array(['Si' not in w for w in mol_list])
+filter_mol = (n_formula_mol>n_thresh_mol) #* np.array(['Si' not in w for w in mol_list])
 filter_salt = np.array((n_formula_salt>n_thresh_salt)) * np.array(['Na' not in w for w in salt_list])
 
 mol_list = mol_list[filter_mol]
