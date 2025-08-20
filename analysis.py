@@ -60,7 +60,9 @@ n_salt = len(salt_list)
 n_thresh_mol = 10
 n_thresh_salt = 20
 
-filter_mol = (n_formula_mol>n_thresh_mol) #* np.array(['Si' not in w for w in mol_list])
+# filter_mol = (n_formula_mol>n_thresh_mol) #* np.array(['Si' not in w for w in mol_list])
+mol_excl = ['CS(N)(=O)=O', 'COC=O']
+filter_mol = (n_formula_mol>n_thresh_mol) * np.array([w not in mol_excl for w in mol_list])
 filter_salt = np.array((n_formula_salt>n_thresh_salt)) * np.array(['Na' not in w for w in salt_list])
 
 mol_list = mol_list[filter_mol]
@@ -84,7 +86,7 @@ salt_list = np.array([
 # '[Li+].c1ccc2O[B-]3(Oc2c1)Oc1ccccc1O3',
 '[B-](F)(F)(F)F.CC[N+](C)(CC)CC',
 '[O-]S(=O)(=O)C(F)(F)F.CCCC[N+](CCCC)(CCCC)CCCC',
- 'CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O',
+'CCCC[N+](CCCC)(CCCC)CCCC.[O-]Cl(=O)(=O)=O',
 # '[Li+].FC(F)(F)S(=O)(=O)[C-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F',
 # '[Li+].[B-]12(OC3=CC4=CC=CC=C4C=C3O1)OC5=CC6=CC=CC=C6C=C5O2',
 # '[B-](C1=CC=CC=C1)(C2=CC=CC=C2)(C3=CC=CC=C3)C4=CC=CC=C4.CCCC[N+](CCCC)(CCCC)CCCC',

@@ -1,5 +1,5 @@
-Covered # formula: 8675
-Target # mols and # salts: 69 15
+Covered # formula: 8655
+Target # mols and # salts: 67 15
 -----------
 CC1COC(=O)O1 5855 Y
 O=C1OCCO1 2877 Y
@@ -59,7 +59,6 @@ O=C1CC(F)CO1 15 N
 CN(C)S(=O)(=O)C 15 Y
 FC(F)C(F)(F)COCCOCC(F)(F)C(F)F 15 N
 CCCC[N+]1(CCCC1)C.C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F 15 Y
-CS(N)(=O)=O 15 Y
 CCOCCOC 15 N
 O=C(OCF)OCF 15 N
 CC(OC(F)(F)C(F)C(F)(F)F)C(F)(F)C(F)C(F)(F)F 15 N
@@ -69,7 +68,6 @@ C(F)(Cl)(Cl)Cl 14 Y
 CCOC(=O)OCCF 14 YE
 CC1CCC(O1)C 12 Y
 CC(OC(=O)OCC(F)(F)F)F 11 N
-COC=O 11 Y
 -----------
 [Li+].F[P-](F)(F)(F)(F)F 2637 Y
 [Li+].[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2 1846 Y

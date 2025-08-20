@@ -294,7 +294,7 @@ if __name__ == '__main__':
     path = 'ligpargen_files'
     lib_xml_naive, lib_pdb_naive = read_ligpargen_lib('ligpargen_files')
     # Create an empty FF
-    forcefield = ForceField(lib_atypes='../atomtypes1.dat')
+    forcefield = ForceField(lib_atypes='../atomtypes2.dat')
     map_toplabel2atypes = {}
     for idx in forcefield.lib_atypes:
         label = forcefield.lib_atypes[idx]['toplabel']
